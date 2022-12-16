@@ -1,0 +1,28 @@
+package com.example.algamoney.api.model;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import javax.annotation.processing.Generated;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
+
+
+
+
+
+@Generated (value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
+@StaticMetamodel(Lancamento.class)
+public abstract class Lancamento_ {
+	
+	public static volatile SingularAttribute<Lancamento, Long> codigo;
+	public static volatile SingularAttribute<Lancamento, String> observacao;
+	public static volatile SingularAttribute<Lancamento, TipoLancamento> tipo;
+	public static volatile SingularAttribute<Lancamento, LocalDate> dataPagamento; 
+	public static volatile SingularAttribute<Lancamento, Pessoas> pessoa;
+	public static volatile SingularAttribute<Lancamento, LocalDate> dadaVencimento;
+	public static volatile SingularAttribute<Lancamento, Categoria> categoria;
+	public static volatile SingularAttribute<Lancamento, BigDecimal> valor;
+	public static volatile SingularAttribute<Lancamento, String > descricao;
+
+}
